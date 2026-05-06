@@ -81,9 +81,19 @@ class SearchCrawler:
         return links
 
     def extract_text(self, html: str) -> tuple[str, str]:
-        """Extract title and text from HTML (placeholder)."""
-        _ = html
-        return ("", "")
+        """Extract the page title and visible text from HTML."""
+        soup = BeautifulSoup(html, "html.parser")
+
+        title_tag = soup.find("title")
+        title = title_tag.get_text(separator=" ", strip=True) if title_tag else ""
+        title = " ".join(title.split())
+
+        for tag in soup(["script", "style", "noscript"]):
+            tag.decompose()
+
+        text = soup.get_text(separator=" ", strip=True)
+        text = " ".join(text.split())
+        return (title, text)
     
     def normalize_url(self, url: str) -> str:
         """
