@@ -7,6 +7,7 @@ from typing import Deque
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit
 
 import requests
+from bs4 import BeautifulSoup
 
 
 class SearchCrawler:
@@ -50,9 +51,34 @@ class SearchCrawler:
         return response.text
 
     def extract_links(self, html: str, base_url: str) -> list[str]:
-        """Extract links from HTML (placeholder)."""
-        _ = (html, base_url)
-        return []
+        """Extract normalized internal links from HTML."""
+        soup = BeautifulSoup(html, "html.parser")
+
+        links: list[str] = []
+        seen: set[str] = set()
+
+        for a_tag in soup.find_all("a", href=True):
+            href = str(a_tag.get("href", "")).strip()
+            if not href:
+                continue
+
+            lowered = href.lower()
+            if lowered.startswith(("javascript:", "mailto:", "tel:")):
+                continue
+
+            resolved = urljoin(base_url, href)
+            normalized = self.normalize_url(resolved)
+
+            if not self.is_internal_url(normalized):
+                continue
+
+            if normalized in seen:
+                continue
+
+            seen.add(normalized)
+            links.append(normalized)
+
+        return links
 
     def extract_text(self, html: str) -> tuple[str, str]:
         """Extract title and text from HTML (placeholder)."""
