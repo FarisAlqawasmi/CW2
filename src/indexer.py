@@ -7,6 +7,8 @@ ranking, and persistence will be implemented in later stages.
 
 from __future__ import annotations
 
+import re
+
 
 class InvertedIndexer:
     """
@@ -34,6 +36,18 @@ class InvertedIndexer:
         """
         _ = (doc_id, url, title, text)
         return None
+
+    def tokenize(self, text: str) -> list[str]:
+        """
+        Convert raw text into a list of tokens.
+
+        The current tokenizer:
+        - lowercases text
+        - extracts alphanumeric tokens (letters and/or digits)
+        - keeps numbers
+        """
+        lowered = text.lower()
+        return re.findall(r"[a-z0-9]+", lowered)
 
     def build_index(self, pages: dict[int, dict[str, object]]) -> None:
         """
