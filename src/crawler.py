@@ -6,6 +6,8 @@ from collections import deque
 from typing import Deque
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit
 
+import requests
+
 
 class SearchCrawler:
     """Represent the crawler used to explore the target website."""
@@ -32,9 +34,20 @@ class SearchCrawler:
         return dict(self.crawled_pages)
 
     def fetch_page(self, url: str) -> str | None:
-        """Fetch a page and return HTML (placeholder)."""
-        _ = url
-        return None
+        """Fetch a page and return its HTML, or None on failure."""
+        try:
+            response = requests.get(url, timeout=self.timeout)
+        except requests.RequestException:
+            return None
+
+        if not response.ok:
+            return None
+
+        content_type = response.headers.get("Content-Type", "")
+        if "text/html" not in content_type.lower():
+            return None
+
+        return response.text
 
     def extract_links(self, html: str, base_url: str) -> list[str]:
         """Extract links from HTML (placeholder)."""
