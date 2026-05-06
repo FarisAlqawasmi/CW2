@@ -80,13 +80,28 @@ class InvertedIndexer:
 
     def build_index(self, pages: dict[int, dict[str, object]]) -> None:
         """
-        Build the index from crawled pages (placeholder).
+        Build the index from crawled pages.
 
         Args:
             pages: Output from the crawler keyed by doc_id. Each page is expected
                 to include keys like "url", "title", and "text".
         """
-        _ = pages
+        self.inverted_index = {}
+        self.documents = {}
+
+        for doc_id, page in pages.items():
+            url = page.get("url")
+            title = page.get("title")
+            text = page.get("text")
+
+            if not isinstance(url, str):
+                continue
+            if not isinstance(title, str):
+                continue
+            if not isinstance(text, str):
+                continue
+
+            self.add_document(doc_id, url, title, text)
         return None
 
     def get_index(self) -> dict[str, dict[str, object]]:
