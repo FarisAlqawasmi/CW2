@@ -45,9 +45,14 @@ class SearchCrawler:
         """Extract title and text from HTML (placeholder)."""
         _ = html
         return ("", "")
-
+    
     def normalize_url(self, url: str) -> str:
-        """Normalize a URL (placeholder implementation)."""
+        """
+        Normalize a URL for consistent crawling behaviour.
+
+        This removes fragments and converts relative URLs into
+        absolute URLs based on the crawler start URL.
+        """
         absolute = urljoin(self.start_url, url)
         absolute, _ = urldefrag(absolute)
 
@@ -55,7 +60,9 @@ class SearchCrawler:
         return urlunsplit((parts.scheme, parts.netloc, parts.path, parts.query, ""))
 
     def is_internal_url(self, url: str) -> bool:
-        """Check if a URL belongs to the target domain."""
+        """
+        Check whether a URL belongs to the target website.
+        """
         candidate = urlsplit(self.normalize_url(url)).netloc.lower()
         target = urlsplit(self.normalize_url(self.start_url)).netloc.lower()
-        return bool(candidate) and candidate == target
+        return bool(candidate) and candidate == target 
