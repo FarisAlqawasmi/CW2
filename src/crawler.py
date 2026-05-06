@@ -4,6 +4,7 @@ from __future__ import annotations
 
 from collections import deque
 from typing import Deque
+import time
 from urllib.parse import urldefrag, urljoin, urlsplit, urlunsplit
 
 import requests
@@ -33,6 +34,7 @@ class SearchCrawler:
     def crawl(self) -> dict[int, dict[str, object]]:
         """Run the crawl process and collect crawled page data."""
         frontier_set: set[str] = set(self.frontier)
+        last_request_time: float | None = None
 
         while self.frontier:
             if self.max_pages is not None and len(self.crawled_pages) >= self.max_pages:
@@ -46,7 +48,14 @@ class SearchCrawler:
                 continue
             self.visited.add(normalized_url)
 
+            if last_request_time is not None:
+                elapsed = time.monotonic() - last_request_time
+                remaining = self.politeness_delay - elapsed
+                if remaining > 0:
+                    time.sleep(remaining)
+
             html = self.fetch_page(normalized_url)
+            last_request_time = time.monotonic()
             if html is None:
                 continue
 
