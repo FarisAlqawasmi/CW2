@@ -5,6 +5,7 @@ from __future__ import annotations
 import sys
 
 from crawler import SearchCrawler
+from indexer import InvertedIndexer
 
 
 PROMPT = "search> "
@@ -16,7 +17,7 @@ def show_help() -> None:
     """Display available commands and short descriptions."""
     print(
         "Commands:\n"
-        "  build          - crawl and build the index (not implemented yet)\n"
+        "  build          - crawl pages and build the inverted index\n"
         "  load           - load a saved index from disk (not implemented yet)\n"
         "  print <word>   - show postings for a word (not implemented yet)\n"
         "  find <query>   - run a search query (not implemented yet)\n"
@@ -26,16 +27,16 @@ def show_help() -> None:
 
 
 def handle_build() -> None:
-    """Crawl the target website (indexing not implemented yet)."""
+    """Crawl the target website and build the inverted index."""
     crawler = SearchCrawler(start_url=TARGET_WEBSITE, max_pages=3)
     crawled_pages = crawler.crawl()
 
-    print(f"Crawled {len(crawled_pages)} pages.")
-    for doc_id in sorted(crawled_pages):
-        page = crawled_pages[doc_id]
-        url = page.get("url")
-        if isinstance(url, str):
-            print(url)
+    indexer = InvertedIndexer()
+    indexer.build_index(crawled_pages)
+
+    print(f"Pages crawled: {len(crawled_pages)}")
+    print(f"Documents indexed: {len(indexer.documents)}")
+    print(f"Unique terms: {len(indexer.get_index())}")
 
 
 def handle_load() -> None:
