@@ -31,7 +31,44 @@ class SearchCrawler:
         self.crawled_pages: dict[int, dict[str, object]] = {}
 
     def crawl(self) -> dict[int, dict[str, object]]:
-        """Run the crawl process (placeholder)."""
+        """Run the crawl process and collect crawled page data."""
+        frontier_set: set[str] = set(self.frontier)
+
+        while self.frontier:
+            if self.max_pages is not None and len(self.crawled_pages) >= self.max_pages:
+                break
+
+            url = self.frontier.popleft()
+            frontier_set.discard(url)
+
+            normalized_url = self.normalize_url(url)
+            if normalized_url in self.visited:
+                continue
+            self.visited.add(normalized_url)
+
+            html = self.fetch_page(normalized_url)
+            if html is None:
+                continue
+
+            title, text = self.extract_text(html)
+            links = self.extract_links(html, normalized_url)
+
+            doc_id = len(self.crawled_pages)
+            self.crawled_pages[doc_id] = {
+                "url": normalized_url,
+                "title": title,
+                "text": text,
+                "links": links,
+            }
+
+            for link in links:
+                if link in self.visited:
+                    continue
+                if link in frontier_set:
+                    continue
+                self.frontier.append(link)
+                frontier_set.add(link)
+
         return dict(self.crawled_pages)
 
     def fetch_page(self, url: str) -> str | None:
