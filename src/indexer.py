@@ -26,7 +26,7 @@ class InvertedIndexer:
 
     def add_document(self, doc_id: int, url: str, title: str, text: str) -> None:
         """
-        Add a document to the index (placeholder).
+        Add a document to the index.
 
         Args:
             doc_id: Integer document identifier.
@@ -34,8 +34,37 @@ class InvertedIndexer:
             title: Extracted page title.
             text: Extracted visible page text.
         """
-        _ = (doc_id, url, title, text)
-        return None
+        tokens = self.tokenize(text)
+
+        self.documents[doc_id] = {
+            "url": url,
+            "title": title,
+            "word_count": len(tokens),
+        }
+
+        term_positions: dict[str, list[int]] = {}
+        for pos, term in enumerate(tokens):
+            term_positions.setdefault(term, []).append(pos)
+
+        for term, positions in term_positions.items():
+            entry = self.inverted_index.get(term)
+            if entry is None:
+                entry = {"df": 0, "postings": {}}
+                self.inverted_index[term] = entry
+
+            postings = entry.get("postings")
+            if not isinstance(postings, dict):
+                postings = {}
+                entry["postings"] = postings
+
+            if doc_id not in postings:
+                df = entry.get("df")
+                entry["df"] = (df if isinstance(df, int) else 0) + 1
+
+            postings[doc_id] = {
+                "tf": len(positions),
+                "positions": positions,
+            }
 
     def tokenize(self, text: str) -> list[str]:
         """
