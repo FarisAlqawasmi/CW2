@@ -4,8 +4,12 @@ from __future__ import annotations
 
 import sys
 
+from crawler import SearchCrawler
+
 
 PROMPT = "search> "
+
+TARGET_WEBSITE: str = "https://quotes.toscrape.com/"
 
 
 def show_help() -> None:
@@ -22,8 +26,16 @@ def show_help() -> None:
 
 
 def handle_build() -> None:
-    """Handle the build command placeholder."""
-    print("Build command recognised. Crawler not implemented yet.")
+    """Crawl the target website (indexing not implemented yet)."""
+    crawler = SearchCrawler(start_url=TARGET_WEBSITE, max_pages=3)
+    crawled_pages = crawler.crawl()
+
+    print(f"Crawled {len(crawled_pages)} pages.")
+    for doc_id in sorted(crawled_pages):
+        page = crawled_pages[doc_id]
+        url = page.get("url")
+        if isinstance(url, str):
+            print(url)
 
 
 def handle_load() -> None:
