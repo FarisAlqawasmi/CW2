@@ -1,0 +1,5724 @@
+{
+  "documents": {
+    "0": {
+      "url": "https://quotes.toscrape.com/",
+      "title": "Quotes to Scrape",
+      "word_count": 291
+    },
+    "1": {
+      "url": "https://quotes.toscrape.com/login",
+      "title": "Quotes to Scrape",
+      "word_count": 17
+    },
+    "2": {
+      "url": "https://quotes.toscrape.com/author/Albert-Einstein",
+      "title": "Quotes to Scrape",
+      "word_count": 650
+    }
+  },
+  "inverted_index": {
+    "quotes": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            0,
+            3,
+            283
+          ]
+        },
+        "1": {
+          "tf": 3,
+          "positions": [
+            0,
+            3,
+            9
+          ]
+        },
+        "2": {
+          "tf": 3,
+          "positions": [
+            0,
+            3,
+            642
+          ]
+        }
+      }
+    },
+    "to": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 7,
+          "positions": [
+            1,
+            4,
+            67,
+            136,
+            153,
+            176,
+            184
+          ]
+        },
+        "1": {
+          "tf": 2,
+          "positions": [
+            1,
+            4
+          ]
+        },
+        "2": {
+          "tf": 20,
+          "positions": [
+            1,
+            4,
+            116,
+            120,
+            145,
+            183,
+            206,
+            236,
+            249,
+            354,
+            386,
+            402,
+            423,
+            447,
+            459,
+            498,
+            507,
+            520,
+            527,
+            551
+          ]
+        }
+      }
+    },
+    "scrape": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            2,
+            5
+          ]
+        },
+        "1": {
+          "tf": 2,
+          "positions": [
+            2,
+            5
+          ]
+        },
+        "2": {
+          "tf": 2,
+          "positions": [
+            2,
+            5
+          ]
+        }
+      }
+    },
+    "login": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            6
+          ]
+        },
+        "1": {
+          "tf": 1,
+          "positions": [
+            6
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            6
+          ]
+        }
+      }
+    },
+    "the": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            7,
+            79,
+            98
+          ]
+        },
+        "2": {
+          "tf": 51,
+          "positions": [
+            32,
+            42,
+            45,
+            51,
+            68,
+            71,
+            74,
+            108,
+            118,
+            121,
+            135,
+            143,
+            148,
+            166,
+            173,
+            194,
+            196,
+            199,
+            226,
+            237,
+            259,
+            268,
+            275,
+            301,
+            337,
+            345,
+            363,
+            366,
+            369,
+            388,
+            394,
+            397,
+            403,
+            415,
+            440,
+            466,
+            473,
+            480,
+            483,
+            491,
+            510,
+            528,
+            542,
+            555,
+            561,
+            567,
+            571,
+            585,
+            591,
+            600,
+            622
+          ]
+        }
+      }
+    },
+    "world": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            8,
+            37
+          ]
+        },
+        "2": {
+          "tf": 4,
+          "positions": [
+            69,
+            94,
+            338,
+            513
+          ]
+        }
+      }
+    },
+    "as": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            9,
+            73,
+            82
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            576
+          ]
+        }
+      }
+    },
+    "we": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            10,
+            46
+          ]
+        }
+      }
+    },
+    "have": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            11,
+            200
+          ]
+        },
+        "2": {
+          "tf": 3,
+          "positions": [
+            142,
+            182,
+            620
+          ]
+        }
+      }
+    },
+    "created": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            12
+          ]
+        }
+      }
+    },
+    "it": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 8,
+          "positions": [
+            13,
+            20,
+            38,
+            101,
+            133,
+            173,
+            236,
+            239
+          ]
+        }
+      }
+    },
+    "is": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 12,
+          "positions": [
+            14,
+            39,
+            72,
+            76,
+            81,
+            85,
+            127,
+            130,
+            174,
+            226,
+            237,
+            256
+          ]
+        },
+        "2": {
+          "tf": 3,
+          "positions": [
+            155,
+            205,
+            262
+          ]
+        }
+      }
+    },
+    "a": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 10,
+          "positions": [
+            15,
+            77,
+            86,
+            110,
+            155,
+            161,
+            216,
+            224,
+            228,
+            252
+          ]
+        },
+        "2": {
+          "tf": 13,
+          "positions": [
+            84,
+            91,
+            98,
+            127,
+            151,
+            209,
+            222,
+            247,
+            277,
+            437,
+            518,
+            536,
+            577
+          ]
+        }
+      }
+    },
+    "process": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            16
+          ]
+        }
+      }
+    },
+    "of": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            17,
+            157,
+            163
+          ]
+        },
+        "2": {
+          "tf": 36,
+          "positions": [
+            34,
+            47,
+            73,
+            101,
+            111,
+            123,
+            139,
+            150,
+            160,
+            175,
+            186,
+            192,
+            240,
+            272,
+            279,
+            310,
+            362,
+            365,
+            390,
+            396,
+            405,
+            409,
+            417,
+            431,
+            443,
+            451,
+            462,
+            468,
+            476,
+            482,
+            486,
+            512,
+            531,
+            535,
+            569,
+            593
+          ]
+        }
+      }
+    },
+    "our": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 4,
+          "positions": [
+            18,
+            26,
+            40,
+            52
+          ]
+        }
+      }
+    },
+    "thinking": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            19,
+            27,
+            36
+          ]
+        }
+      }
+    },
+    "cannot": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            21
+          ]
+        }
+      }
+    },
+    "be": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 7,
+          "positions": [
+            22,
+            100,
+            114,
+            137,
+            148,
+            177,
+            185
+          ]
+        },
+        "2": {
+          "tf": 2,
+          "positions": [
+            207,
+            421
+          ]
+        }
+      }
+    },
+    "changed": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            23
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            67
+          ]
+        }
+      }
+    },
+    "without": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            24,
+            254
+          ]
+        }
+      }
+    },
+    "changing": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            25
+          ]
+        }
+      }
+    },
+    "by": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 12,
+          "positions": [
+            28,
+            54,
+            88,
+            117,
+            143,
+            165,
+            192,
+            214,
+            244,
+            261,
+            284,
+            289
+          ]
+        },
+        "1": {
+          "tf": 2,
+          "positions": [
+            10,
+            15
+          ]
+        },
+        "2": {
+          "tf": 5,
+          "positions": [
+            36,
+            225,
+            314,
+            643,
+            648
+          ]
+        }
+      }
+    },
+    "albert": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            29,
+            89,
+            166
+          ]
+        },
+        "2": {
+          "tf": 3,
+          "positions": [
+            7,
+            19,
+            634
+          ]
+        }
+      }
+    },
+    "einstein": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            30,
+            90,
+            167
+          ]
+        },
+        "2": {
+          "tf": 12,
+          "positions": [
+            8,
+            20,
+            77,
+            90,
+            257,
+            305,
+            377,
+            558,
+            583,
+            587,
+            596,
+            624
+          ]
+        }
+      }
+    },
+    "about": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 10,
+          "positions": [
+            31,
+            58,
+            91,
+            120,
+            146,
+            168,
+            195,
+            218,
+            247,
+            264
+          ]
+        }
+      }
+    },
+    "tags": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 11,
+          "positions": [
+            32,
+            59,
+            92,
+            121,
+            147,
+            169,
+            196,
+            219,
+            248,
+            265,
+            272
+          ]
+        }
+      }
+    },
+    "change": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            33
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            299
+          ]
+        }
+      }
+    },
+    "deep": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            34
+          ]
+        }
+      }
+    },
+    "thoughts": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            35
+          ]
+        }
+      }
+    },
+    "choices": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            41,
+            61
+          ]
+        }
+      }
+    },
+    "harry": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            42
+          ]
+        }
+      }
+    },
+    "that": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            43,
+            210
+          ]
+        },
+        "2": {
+          "tf": 5,
+          "positions": [
+            154,
+            158,
+            379,
+            414,
+            541
+          ]
+        }
+      }
+    },
+    "show": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            44
+          ]
+        }
+      }
+    },
+    "what": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            45,
+            180,
+            188
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            552
+          ]
+        }
+      }
+    },
+    "truly": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            47
+          ]
+        }
+      }
+    },
+    "are": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 4,
+          "positions": [
+            48,
+            63,
+            182,
+            190
+          ]
+        },
+        "2": {
+          "tf": 2,
+          "positions": [
+            190,
+            286
+          ]
+        }
+      }
+    },
+    "far": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            49
+          ]
+        }
+      }
+    },
+    "more": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            50
+          ]
+        },
+        "2": {
+          "tf": 4,
+          "positions": [
+            210,
+            215,
+            266,
+            628
+          ]
+        }
+      }
+    },
+    "than": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            51,
+            140,
+            183
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            267
+          ]
+        }
+      }
+    },
+    "abilities": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            53,
+            60
+          ]
+        }
+      }
+    },
+    "j": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            55
+          ]
+        }
+      }
+    },
+    "k": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            56
+          ]
+        }
+      }
+    },
+    "rowling": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            57
+          ]
+        }
+      }
+    },
+    "there": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            62
+          ]
+        }
+      }
+    },
+    "only": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            64
+          ]
+        }
+      }
+    },
+    "two": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            65
+          ]
+        }
+      }
+    },
+    "ways": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            66,
+            209
+          ]
+        }
+      }
+    },
+    "live": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            68,
+            95
+          ]
+        }
+      }
+    },
+    "your": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            69
+          ]
+        }
+      }
+    },
+    "life": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 4,
+          "positions": [
+            70,
+            94,
+            197,
+            275
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            241
+          ]
+        }
+      }
+    },
+    "one": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            71
+          ]
+        }
+      }
+    },
+    "though": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            74,
+            83
+          ]
+        }
+      }
+    },
+    "nothing": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            75
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            265
+          ]
+        }
+      }
+    },
+    "miracle": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            78,
+            87,
+            96
+          ]
+        }
+      }
+    },
+    "other": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            80
+          ]
+        }
+      }
+    },
+    "everything": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            84
+          ]
+        }
+      }
+    },
+    "inspirational": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 4,
+          "positions": [
+            93,
+            150,
+            222,
+            274
+          ]
+        }
+      }
+    },
+    "miracles": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            97
+          ]
+        }
+      }
+    },
+    "person": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            99
+          ]
+        }
+      }
+    },
+    "gentleman": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            102
+          ]
+        }
+      }
+    },
+    "or": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            103
+          ]
+        }
+      }
+    },
+    "lady": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            104
+          ]
+        }
+      }
+    },
+    "who": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            105
+          ]
+        }
+      }
+    },
+    "has": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            106
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            334
+          ]
+        }
+      }
+    },
+    "not": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 4,
+          "positions": [
+            107,
+            152,
+            191,
+            201
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            504
+          ]
+        }
+      }
+    },
+    "pleasure": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            108
+          ]
+        }
+      }
+    },
+    "in": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            109,
+            241
+          ]
+        },
+        "2": {
+          "tf": 19,
+          "positions": [
+            13,
+            17,
+            23,
+            54,
+            65,
+            88,
+            131,
+            165,
+            172,
+            177,
+            201,
+            233,
+            246,
+            349,
+            373,
+            433,
+            500,
+            605,
+            612
+          ]
+        }
+      }
+    },
+    "good": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            111
+          ]
+        },
+        "2": {
+          "tf": 2,
+          "positions": [
+            137,
+            195
+          ]
+        }
+      }
+    },
+    "novel": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            112
+          ]
+        }
+      }
+    },
+    "must": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            113
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            141
+          ]
+        }
+      }
+    },
+    "intolerably": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            115
+          ]
+        }
+      }
+    },
+    "stupid": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            116
+          ]
+        }
+      }
+    },
+    "jane": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            118
+          ]
+        }
+      }
+    },
+    "austen": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            119
+          ]
+        }
+      }
+    },
+    "aliteracy": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            122
+          ]
+        }
+      }
+    },
+    "books": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            123,
+            277
+          ]
+        }
+      }
+    },
+    "classic": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            124
+          ]
+        }
+      }
+    },
+    "humor": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 3,
+          "positions": [
+            125,
+            266,
+            276
+          ]
+        }
+      }
+    },
+    "imperfection": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            126
+          ]
+        }
+      }
+    },
+    "beauty": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            128
+          ]
+        }
+      }
+    },
+    "madness": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            129
+          ]
+        }
+      }
+    },
+    "genius": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            131
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            627
+          ]
+        }
+      }
+    },
+    "and": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            132
+          ]
+        },
+        "2": {
+          "tf": 13,
+          "positions": [
+            104,
+            162,
+            198,
+            220,
+            231,
+            270,
+            357,
+            426,
+            454,
+            465,
+            502,
+            539,
+            618
+          ]
+        }
+      }
+    },
+    "s": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            134,
+            240
+          ]
+        },
+        "2": {
+          "tf": 4,
+          "positions": [
+            86,
+            306,
+            339,
+            544
+          ]
+        }
+      }
+    },
+    "better": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            135,
+            175
+          ]
+        }
+      }
+    },
+    "absolutely": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            138,
+            141
+          ]
+        }
+      }
+    },
+    "ridiculous": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            139
+          ]
+        }
+      }
+    },
+    "boring": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            142
+          ]
+        }
+      }
+    },
+    "marilyn": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            144
+          ]
+        }
+      }
+    },
+    "monroe": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            145
+          ]
+        }
+      }
+    },
+    "yourself": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            149
+          ]
+        }
+      }
+    },
+    "try": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            151
+          ]
+        }
+      }
+    },
+    "become": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            154,
+            160
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            554
+          ]
+        }
+      }
+    },
+    "man": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            156,
+            162
+          ]
+        }
+      }
+    },
+    "success": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            158,
+            171
+          ]
+        }
+      }
+    },
+    "rather": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            159
+          ]
+        }
+      }
+    },
+    "value": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            164,
+            172
+          ]
+        }
+      }
+    },
+    "adulthood": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            170
+          ]
+        }
+      }
+    },
+    "hated": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            178
+          ]
+        }
+      }
+    },
+    "for": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            179,
+            187
+          ]
+        },
+        "2": {
+          "tf": 7,
+          "positions": [
+            134,
+            263,
+            297,
+            325,
+            351,
+            359,
+            602
+          ]
+        }
+      }
+    },
+    "you": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 4,
+          "positions": [
+            181,
+            189,
+            231,
+            258
+          ]
+        }
+      }
+    },
+    "loved": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            186
+          ]
+        }
+      }
+    },
+    "andr": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            193
+          ]
+        }
+      }
+    },
+    "gide": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            194
+          ]
+        }
+      }
+    },
+    "love": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            198,
+            273
+          ]
+        }
+      }
+    },
+    "i": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            199,
+            203
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            96
+          ]
+        }
+      }
+    },
+    "failed": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            202
+          ]
+        }
+      }
+    },
+    "ve": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            204
+          ]
+        }
+      }
+    },
+    "just": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            205
+          ]
+        }
+      }
+    },
+    "found": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            206
+          ]
+        }
+      }
+    },
+    "10": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            207
+          ]
+        }
+      }
+    },
+    "000": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            208
+          ]
+        }
+      }
+    },
+    "won": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            211
+          ]
+        }
+      }
+    },
+    "t": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            212
+          ]
+        }
+      }
+    },
+    "work": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            213
+          ]
+        }
+      }
+    },
+    "thomas": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            215
+          ]
+        }
+      }
+    },
+    "edison": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            217,
+            220
+          ]
+        }
+      }
+    },
+    "failure": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            221
+          ]
+        }
+      }
+    },
+    "paraphrased": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            223
+          ]
+        }
+      }
+    },
+    "woman": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            225
+          ]
+        }
+      }
+    },
+    "like": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            227,
+            257
+          ]
+        }
+      }
+    },
+    "tea": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            229
+          ]
+        }
+      }
+    },
+    "bag": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            230
+          ]
+        }
+      }
+    },
+    "never": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            232
+          ]
+        }
+      }
+    },
+    "know": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            233,
+            259
+          ]
+        }
+      }
+    },
+    "how": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            234
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            294
+          ]
+        }
+      }
+    },
+    "strong": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            235
+          ]
+        }
+      }
+    },
+    "until": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            238
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            609
+          ]
+        }
+      }
+    },
+    "hot": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            242
+          ]
+        }
+      }
+    },
+    "water": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            243
+          ]
+        }
+      }
+    },
+    "eleanor": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            245,
+            250
+          ]
+        }
+      }
+    },
+    "roosevelt": {
+      "df": 2,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            246,
+            251
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            524
+          ]
+        }
+      }
+    },
+    "misattributed": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            249
+          ]
+        }
+      }
+    },
+    "day": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            253
+          ]
+        }
+      }
+    },
+    "sunshine": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            255
+          ]
+        }
+      }
+    },
+    "night": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            260
+          ]
+        }
+      }
+    },
+    "steve": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            262
+          ]
+        }
+      }
+    },
+    "martin": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            263
+          ]
+        }
+      }
+    },
+    "obvious": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            267
+          ]
+        }
+      }
+    },
+    "simile": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 2,
+          "positions": [
+            268,
+            282
+          ]
+        }
+      }
+    },
+    "next": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            269
+          ]
+        }
+      }
+    },
+    "top": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            270
+          ]
+        }
+      }
+    },
+    "ten": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            271
+          ]
+        }
+      }
+    },
+    "reading": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            278
+          ]
+        }
+      }
+    },
+    "friendship": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            279
+          ]
+        }
+      }
+    },
+    "friends": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            280
+          ]
+        }
+      }
+    },
+    "truth": {
+      "df": 1,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            281
+          ]
+        }
+      }
+    },
+    "goodreads": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            285
+          ]
+        },
+        "1": {
+          "tf": 1,
+          "positions": [
+            11
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            644
+          ]
+        }
+      }
+    },
+    "com": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            286
+          ]
+        },
+        "1": {
+          "tf": 1,
+          "positions": [
+            12
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            645
+          ]
+        }
+      }
+    },
+    "made": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            287
+          ]
+        },
+        "1": {
+          "tf": 1,
+          "positions": [
+            13
+          ]
+        },
+        "2": {
+          "tf": 3,
+          "positions": [
+            78,
+            621,
+            646
+          ]
+        }
+      }
+    },
+    "with": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            288
+          ]
+        },
+        "1": {
+          "tf": 1,
+          "positions": [
+            14
+          ]
+        },
+        "2": {
+          "tf": 7,
+          "positions": [
+            393,
+            427,
+            449,
+            580,
+            599,
+            626,
+            647
+          ]
+        }
+      }
+    },
+    "zyte": {
+      "df": 3,
+      "postings": {
+        "0": {
+          "tf": 1,
+          "positions": [
+            290
+          ]
+        },
+        "1": {
+          "tf": 1,
+          "positions": [
+            16
+          ]
+        },
+        "2": {
+          "tf": 1,
+          "positions": [
+            649
+          ]
+        }
+      }
+    },
+    "username": {
+      "df": 1,
+      "postings": {
+        "1": {
+          "tf": 1,
+          "positions": [
+            7
+          ]
+        }
+      }
+    },
+    "password": {
+      "df": 1,
+      "postings": {
+        "1": {
+          "tf": 1,
+          "positions": [
+            8
+          ]
+        }
+      }
+    },
+    "born": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            9,
+            22
+          ]
+        }
+      }
+    },
+    "march": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            10
+          ]
+        }
+      }
+    },
+    "14": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            11
+          ]
+        }
+      }
+    },
+    "1879": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            12,
+            18
+          ]
+        }
+      }
+    },
+    "ulm": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            14,
+            24
+          ]
+        }
+      }
+    },
+    "germany": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            15,
+            25,
+            508
+          ]
+        }
+      }
+    },
+    "description": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            16
+          ]
+        }
+      }
+    },
+    "was": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 5,
+          "positions": [
+            21,
+            371,
+            382,
+            489,
+            597
+          ]
+        }
+      }
+    },
+    "he": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 10,
+          "positions": [
+            26,
+            106,
+            129,
+            343,
+            411,
+            435,
+            445,
+            470,
+            488,
+            516
+          ]
+        }
+      }
+    },
+    "completed": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            27
+          ]
+        }
+      }
+    },
+    "his": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 12,
+          "positions": [
+            28,
+            38,
+            56,
+            80,
+            326,
+            352,
+            360,
+            406,
+            428,
+            460,
+            610,
+            614
+          ]
+        }
+      }
+    },
+    "ph": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            29
+          ]
+        }
+      }
+    },
+    "d": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            30,
+            320,
+            523
+          ]
+        }
+      }
+    },
+    "at": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            31,
+            126
+          ]
+        }
+      }
+    },
+    "university": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            33
+          ]
+        }
+      }
+    },
+    "zurich": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            35
+          ]
+        }
+      }
+    },
+    "1909": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            37
+          ]
+        }
+      }
+    },
+    "1905": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            39,
+            66
+          ]
+        }
+      }
+    },
+    "paper": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            40,
+            58,
+            438
+          ]
+        }
+      }
+    },
+    "explaining": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            41
+          ]
+        }
+      }
+    },
+    "photoelectric": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            43,
+            367
+          ]
+        }
+      }
+    },
+    "effect": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            44,
+            368
+          ]
+        }
+      }
+    },
+    "basis": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            46
+          ]
+        }
+      }
+    },
+    "electronics": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            48
+          ]
+        }
+      }
+    },
+    "earned": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            49
+          ]
+        }
+      }
+    },
+    "him": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            50,
+            526
+          ]
+        }
+      }
+    },
+    "nobel": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            52,
+            347,
+            640
+          ]
+        }
+      }
+    },
+    "prize": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            53,
+            348,
+            641
+          ]
+        }
+      }
+    },
+    "1921": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            55,
+            346
+          ]
+        }
+      }
+    },
+    "first": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            57
+          ]
+        }
+      }
+    },
+    "on": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 4,
+          "positions": [
+            59,
+            228,
+            439,
+            509
+          ]
+        }
+      }
+    },
+    "special": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            60,
+            407
+          ]
+        }
+      }
+    },
+    "relativity": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 4,
+          "positions": [
+            61,
+            410,
+            418,
+            444
+          ]
+        }
+      }
+    },
+    "theory": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 8,
+          "positions": [
+            62,
+            376,
+            408,
+            430,
+            442,
+            456,
+            464,
+            485
+          ]
+        }
+      }
+    },
+    "also": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            63,
+            420,
+            471
+          ]
+        }
+      }
+    },
+    "published": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            64,
+            224,
+            436
+          ]
+        }
+      }
+    },
+    "after": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            70
+          ]
+        }
+      }
+    },
+    "rise": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            72
+          ]
+        }
+      }
+    },
+    "nazi": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            75
+          ]
+        }
+      }
+    },
+    "party": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            76
+          ]
+        }
+      }
+    },
+    "princeton": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            79,
+            606
+          ]
+        }
+      }
+    },
+    "permanent": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            81
+          ]
+        }
+      }
+    },
+    "home": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            82
+          ]
+        }
+      }
+    },
+    "becoming": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            83
+          ]
+        }
+      }
+    },
+    "u": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            85,
+            543
+          ]
+        }
+      }
+    },
+    "citizen": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            87
+          ]
+        }
+      }
+    },
+    "1940": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            89
+          ]
+        }
+      }
+    },
+    "pacifist": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            92
+          ]
+        }
+      }
+    },
+    "during": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            93
+          ]
+        }
+      }
+    },
+    "war": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            95,
+            514
+          ]
+        }
+      }
+    },
+    "stayed": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            97
+          ]
+        }
+      }
+    },
+    "firm": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            99
+          ]
+        }
+      }
+    },
+    "proponent": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            100
+          ]
+        }
+      }
+    },
+    "social": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            102
+          ]
+        }
+      }
+    },
+    "justice": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            103
+          ]
+        }
+      }
+    },
+    "responsibility": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            105
+          ]
+        }
+      }
+    },
+    "chaired": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            107
+          ]
+        }
+      }
+    },
+    "emergency": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            109
+          ]
+        }
+      }
+    },
+    "committee": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            110
+          ]
+        }
+      }
+    },
+    "atomic": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            112,
+            124
+          ]
+        }
+      }
+    },
+    "scientists": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            113
+          ]
+        }
+      }
+    },
+    "which": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 8,
+          "positions": [
+            114,
+            164,
+            189,
+            285,
+            333,
+            457,
+            478,
+            589
+          ]
+        }
+      }
+    },
+    "organized": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            115
+          ]
+        }
+      }
+    },
+    "alert": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            117
+          ]
+        }
+      }
+    },
+    "public": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            119
+          ]
+        }
+      }
+    },
+    "dangers": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            122
+          ]
+        }
+      }
+    },
+    "warfare": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            125
+          ]
+        }
+      }
+    },
+    "symposium": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            128,
+            223
+          ]
+        }
+      }
+    },
+    "advised": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            130
+          ]
+        }
+      }
+    },
+    "their": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            132,
+            178,
+            234
+          ]
+        }
+      }
+    },
+    "struggle": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            133
+          ]
+        }
+      }
+    },
+    "ethical": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            136
+          ]
+        }
+      }
+    },
+    "teachers": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            138
+          ]
+        }
+      }
+    },
+    "religion": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 4,
+          "positions": [
+            140,
+            221,
+            232,
+            311
+          ]
+        }
+      }
+    },
+    "stature": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            144
+          ]
+        }
+      }
+    },
+    "give": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            146,
+            156
+          ]
+        }
+      }
+    },
+    "up": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            147,
+            157
+          ]
+        }
+      }
+    },
+    "doctrine": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            149
+          ]
+        }
+      }
+    },
+    "personal": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            152
+          ]
+        }
+      }
+    },
+    "god": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            153,
+            261
+          ]
+        }
+      }
+    },
+    "source": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            159
+          ]
+        }
+      }
+    },
+    "fear": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            161
+          ]
+        }
+      }
+    },
+    "hope": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            163
+          ]
+        }
+      }
+    },
+    "past": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            167
+          ]
+        }
+      }
+    },
+    "placed": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            168
+          ]
+        }
+      }
+    },
+    "such": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            169
+          ]
+        }
+      }
+    },
+    "vast": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            170
+          ]
+        }
+      }
+    },
+    "power": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            171,
+            499
+          ]
+        }
+      }
+    },
+    "hands": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            174
+          ]
+        }
+      }
+    },
+    "priests": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            176
+          ]
+        }
+      }
+    },
+    "labors": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            179
+          ]
+        }
+      }
+    },
+    "they": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            180
+          ]
+        }
+      }
+    },
+    "will": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            181
+          ]
+        }
+      }
+    },
+    "avail": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            184
+          ]
+        }
+      }
+    },
+    "themselves": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            185
+          ]
+        }
+      }
+    },
+    "those": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            187
+          ]
+        }
+      }
+    },
+    "forces": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            188,
+            563
+          ]
+        }
+      }
+    },
+    "capable": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            191
+          ]
+        }
+      }
+    },
+    "cultivating": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            193
+          ]
+        }
+      }
+    },
+    "true": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            197
+          ]
+        }
+      }
+    },
+    "beautiful": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            200
+          ]
+        }
+      }
+    },
+    "humanity": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            202
+          ]
+        }
+      }
+    },
+    "itself": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            203
+          ]
+        }
+      }
+    },
+    "this": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 4,
+          "positions": [
+            204,
+            300,
+            400,
+            548
+          ]
+        }
+      }
+    },
+    "sure": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            208
+          ]
+        }
+      }
+    },
+    "difficult": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            211
+          ]
+        }
+      }
+    },
+    "but": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            212,
+            281,
+            564
+          ]
+        }
+      }
+    },
+    "an": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            213
+          ]
+        }
+      }
+    },
+    "incomparably": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            214
+          ]
+        }
+      }
+    },
+    "worthy": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            216
+          ]
+        }
+      }
+    },
+    "task": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            217
+          ]
+        }
+      }
+    },
+    "science": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            218,
+            229
+          ]
+        }
+      }
+    },
+    "philosophy": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            219,
+            230
+          ]
+        }
+      }
+    },
+    "conference": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            227
+          ]
+        }
+      }
+    },
+    "relation": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            235
+          ]
+        }
+      }
+    },
+    "democratic": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            238
+          ]
+        }
+      }
+    },
+    "way": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            239
+          ]
+        }
+      }
+    },
+    "inc": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            242
+          ]
+        }
+      }
+    },
+    "new": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            243,
+            537,
+            607
+          ]
+        }
+      }
+    },
+    "york": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            244
+          ]
+        }
+      }
+    },
+    "1941": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            245
+          ]
+        }
+      }
+    },
+    "letter": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            248,
+            307,
+            519
+          ]
+        }
+      }
+    },
+    "philosopher": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            250
+          ]
+        }
+      }
+    },
+    "eric": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            251
+          ]
+        }
+      }
+    },
+    "gutkind": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            252
+          ]
+        }
+      }
+    },
+    "dated": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            253
+          ]
+        }
+      }
+    },
+    "jan": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            254
+          ]
+        }
+      }
+    },
+    "3": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            255
+          ]
+        }
+      }
+    },
+    "1954": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            256
+          ]
+        }
+      }
+    },
+    "stated": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            258
+          ]
+        }
+      }
+    },
+    "word": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            260,
+            623
+          ]
+        }
+      }
+    },
+    "me": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            264,
+            298
+          ]
+        }
+      }
+    },
+    "expression": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            269
+          ]
+        }
+      }
+    },
+    "product": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            271
+          ]
+        }
+      }
+    },
+    "human": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            273
+          ]
+        }
+      }
+    },
+    "weaknesses": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            274
+          ]
+        }
+      }
+    },
+    "bible": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            276
+          ]
+        }
+      }
+    },
+    "collection": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            278
+          ]
+        }
+      }
+    },
+    "honorable": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            280
+          ]
+        }
+      }
+    },
+    "still": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            282
+          ]
+        }
+      }
+    },
+    "primitive": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            283
+          ]
+        }
+      }
+    },
+    "legends": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            284
+          ]
+        }
+      }
+    },
+    "nevertheless": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            287
+          ]
+        }
+      }
+    },
+    "pretty": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            288
+          ]
+        }
+      }
+    },
+    "childish": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            289,
+            303
+          ]
+        }
+      }
+    },
+    "no": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            290,
+            292,
+            383
+          ]
+        }
+      }
+    },
+    "interpretation": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            291
+          ]
+        }
+      }
+    },
+    "matter": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            293
+          ]
+        }
+      }
+    },
+    "subtle": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            295
+          ]
+        }
+      }
+    },
+    "can": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            296
+          ]
+        }
+      }
+    },
+    "guardian": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            302
+          ]
+        }
+      }
+    },
+    "superstition": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            304
+          ]
+        }
+      }
+    },
+    "makes": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            308
+          ]
+        }
+      }
+    },
+    "view": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            309
+          ]
+        }
+      }
+    },
+    "relatively": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            312
+          ]
+        }
+      }
+    },
+    "clear": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            313
+          ]
+        }
+      }
+    },
+    "james": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            315
+          ]
+        }
+      }
+    },
+    "randerson": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            316
+          ]
+        }
+      }
+    },
+    "may": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            317
+          ]
+        }
+      }
+    },
+    "13": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            318
+          ]
+        }
+      }
+    },
+    "2008": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            319
+          ]
+        }
+      }
+    },
+    "1955": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            321,
+            613
+          ]
+        }
+      }
+    },
+    "while": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            322
+          ]
+        }
+      }
+    },
+    "best": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            323
+          ]
+        }
+      }
+    },
+    "known": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            324
+          ]
+        }
+      }
+    },
+    "mass": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            327
+          ]
+        }
+      }
+    },
+    "energy": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            328
+          ]
+        }
+      }
+    },
+    "equivalence": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            329
+          ]
+        }
+      }
+    },
+    "formula": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            330
+          ]
+        }
+      }
+    },
+    "e": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            331,
+            635
+          ]
+        }
+      }
+    },
+    "mc2": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            332
+          ]
+        }
+      }
+    },
+    "been": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            335
+          ]
+        }
+      }
+    },
+    "dubbed": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            336
+          ]
+        }
+      }
+    },
+    "most": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            340
+          ]
+        }
+      }
+    },
+    "famous": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            341
+          ]
+        }
+      }
+    },
+    "equation": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            342
+          ]
+        }
+      }
+    },
+    "received": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            344
+          ]
+        }
+      }
+    },
+    "physics": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            350,
+            356
+          ]
+        }
+      }
+    },
+    "services": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            353
+          ]
+        }
+      }
+    },
+    "theoretical": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            355
+          ]
+        }
+      }
+    },
+    "especially": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            358
+          ]
+        }
+      }
+    },
+    "discovery": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            361
+          ]
+        }
+      }
+    },
+    "law": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            364
+          ]
+        }
+      }
+    },
+    "latter": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            370
+          ]
+        }
+      }
+    },
+    "pivotal": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            372
+          ]
+        }
+      }
+    },
+    "establishing": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            374
+          ]
+        }
+      }
+    },
+    "quantum": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            375,
+            455
+          ]
+        }
+      }
+    },
+    "thought": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            378
+          ]
+        }
+      }
+    },
+    "newtonion": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            380
+          ]
+        }
+      }
+    },
+    "mechanics": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            381,
+            392,
+            453
+          ]
+        }
+      }
+    },
+    "longer": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            384
+          ]
+        }
+      }
+    },
+    "enough": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            385
+          ]
+        }
+      }
+    },
+    "reconcile": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            387
+          ]
+        }
+      }
+    },
+    "laws": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            389,
+            395
+          ]
+        }
+      }
+    },
+    "classical": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            391
+          ]
+        }
+      }
+    },
+    "electromagnetic": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            398
+          ]
+        }
+      }
+    },
+    "field": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            399
+          ]
+        }
+      }
+    },
+    "led": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 3,
+          "positions": [
+            401,
+            458,
+            550
+          ]
+        }
+      }
+    },
+    "development": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            404,
+            530
+          ]
+        }
+      }
+    },
+    "realized": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            412
+          ]
+        }
+      }
+    },
+    "however": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            413
+          ]
+        }
+      }
+    },
+    "principle": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            416
+          ]
+        }
+      }
+    },
+    "could": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            419
+          ]
+        }
+      }
+    },
+    "extended": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            422
+          ]
+        }
+      }
+    },
+    "gravitational": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            424
+          ]
+        }
+      }
+    },
+    "fields": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            425
+          ]
+        }
+      }
+    },
+    "subsequent": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            429
+          ]
+        }
+      }
+    },
+    "gravitation": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            432
+          ]
+        }
+      }
+    },
+    "1916": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            434
+          ]
+        }
+      }
+    },
+    "general": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            441
+          ]
+        }
+      }
+    },
+    "continued": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            446
+          ]
+        }
+      }
+    },
+    "deal": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            448
+          ]
+        }
+      }
+    },
+    "problems": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            450
+          ]
+        }
+      }
+    },
+    "statistical": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            452
+          ]
+        }
+      }
+    },
+    "explanations": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            461
+          ]
+        }
+      }
+    },
+    "particle": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            463
+          ]
+        }
+      }
+    },
+    "motion": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            467
+          ]
+        }
+      }
+    },
+    "molecules": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            469
+          ]
+        }
+      }
+    },
+    "investigated": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            472
+          ]
+        }
+      }
+    },
+    "thermal": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            474
+          ]
+        }
+      }
+    },
+    "properties": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            475
+          ]
+        }
+      }
+    },
+    "light": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            477,
+            487
+          ]
+        }
+      }
+    },
+    "laid": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            479
+          ]
+        }
+      }
+    },
+    "foundation": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            481
+          ]
+        }
+      }
+    },
+    "photon": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            484
+          ]
+        }
+      }
+    },
+    "visiting": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            490
+          ]
+        }
+      }
+    },
+    "united": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            492
+          ]
+        }
+      }
+    },
+    "states": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            493
+          ]
+        }
+      }
+    },
+    "when": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            494
+          ]
+        }
+      }
+    },
+    "adolf": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            495
+          ]
+        }
+      }
+    },
+    "hitler": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            496
+          ]
+        }
+      }
+    },
+    "came": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            497
+          ]
+        }
+      }
+    },
+    "1933": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            501
+          ]
+        }
+      }
+    },
+    "did": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            503
+          ]
+        }
+      }
+    },
+    "go": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            505
+          ]
+        }
+      }
+    },
+    "back": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            506
+          ]
+        }
+      }
+    },
+    "eve": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            511
+          ]
+        }
+      }
+    },
+    "ii": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            515
+          ]
+        }
+      }
+    },
+    "endorsed": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            517
+          ]
+        }
+      }
+    },
+    "president": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            521
+          ]
+        }
+      }
+    },
+    "franklin": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            522
+          ]
+        }
+      }
+    },
+    "alerting": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            525
+          ]
+        }
+      }
+    },
+    "potential": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            529
+          ]
+        }
+      }
+    },
+    "extremely": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            532
+          ]
+        }
+      }
+    },
+    "powerful": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            533
+          ]
+        }
+      }
+    },
+    "bombs": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            534
+          ]
+        }
+      }
+    },
+    "type": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            538
+          ]
+        }
+      }
+    },
+    "recommending": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            540
+          ]
+        }
+      }
+    },
+    "begin": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            545
+          ]
+        }
+      }
+    },
+    "similar": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            546
+          ]
+        }
+      }
+    },
+    "research": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            547
+          ]
+        }
+      }
+    },
+    "eventually": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            549
+          ]
+        }
+      }
+    },
+    "would": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            553
+          ]
+        }
+      }
+    },
+    "manhattan": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            556
+          ]
+        }
+      }
+    },
+    "project": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            557
+          ]
+        }
+      }
+    },
+    "supported": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            559
+          ]
+        }
+      }
+    },
+    "defending": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            560
+          ]
+        }
+      }
+    },
+    "allied": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            562
+          ]
+        }
+      }
+    },
+    "largely": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            565
+          ]
+        }
+      }
+    },
+    "denounced": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            566
+          ]
+        }
+      }
+    },
+    "idea": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            568
+          ]
+        }
+      }
+    },
+    "using": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            570
+          ]
+        }
+      }
+    },
+    "newly": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            572
+          ]
+        }
+      }
+    },
+    "discovered": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            573
+          ]
+        }
+      }
+    },
+    "nuclear": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            574,
+            594
+          ]
+        }
+      }
+    },
+    "fission": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            575
+          ]
+        }
+      }
+    },
+    "weapon": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            578
+          ]
+        }
+      }
+    },
+    "later": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            579
+          ]
+        }
+      }
+    },
+    "bertrand": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            581
+          ]
+        }
+      }
+    },
+    "russell": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            582,
+            586
+          ]
+        }
+      }
+    },
+    "signed": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            584
+          ]
+        }
+      }
+    },
+    "manifesto": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            588
+          ]
+        }
+      }
+    },
+    "highlighted": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            590
+          ]
+        }
+      }
+    },
+    "danger": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            592
+          ]
+        }
+      }
+    },
+    "weapons": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            595
+          ]
+        }
+      }
+    },
+    "affiliated": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            598
+          ]
+        }
+      }
+    },
+    "institute": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            601
+          ]
+        }
+      }
+    },
+    "advanced": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            603
+          ]
+        }
+      }
+    },
+    "study": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            604
+          ]
+        }
+      }
+    },
+    "jersey": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            608
+          ]
+        }
+      }
+    },
+    "death": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            611
+          ]
+        }
+      }
+    },
+    "great": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            615
+          ]
+        }
+      }
+    },
+    "intellectual": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            616
+          ]
+        }
+      }
+    },
+    "achievements": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            617
+          ]
+        }
+      }
+    },
+    "originality": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            619
+          ]
+        }
+      }
+    },
+    "synonymous": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            625
+          ]
+        }
+      }
+    },
+    "http": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            629,
+            636
+          ]
+        }
+      }
+    },
+    "en": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            630
+          ]
+        }
+      }
+    },
+    "wikipedia": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            631
+          ]
+        }
+      }
+    },
+    "org": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 2,
+          "positions": [
+            632,
+            639
+          ]
+        }
+      }
+    },
+    "wiki": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            633
+          ]
+        }
+      }
+    },
+    "www": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            637
+          ]
+        }
+      }
+    },
+    "nobelprize": {
+      "df": 1,
+      "postings": {
+        "2": {
+          "tf": 1,
+          "positions": [
+            638
+          ]
+        }
+      }
+    }
+  }
+}

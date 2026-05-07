@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import sys
+from pathlib import Path
 
 from crawler import SearchCrawler
 from indexer import InvertedIndexer
@@ -12,6 +13,7 @@ from search import SearchEngine
 PROMPT = "search> "
 
 TARGET_WEBSITE: str = "https://quotes.toscrape.com/"
+INDEX_FILE = Path("data/index.json")
 
 current_indexer: InvertedIndexer | None = None
 
@@ -37,16 +39,30 @@ def handle_build() -> None:
 
     indexer = InvertedIndexer()
     indexer.build_index(crawled_pages)
+    INDEX_FILE.parent.mkdir(parents=True, exist_ok=True)
+    indexer.save_to_file(str(INDEX_FILE))
     current_indexer = indexer
 
     print(f"Pages crawled: {len(crawled_pages)}")
     print(f"Documents indexed: {len(indexer.documents)}")
     print(f"Unique terms: {len(indexer.get_index())}")
+    print(f"Index saved to: {INDEX_FILE}")
 
 
 def handle_load() -> None:
-    """Handle the load command placeholder."""
-    print("Load command not implemented yet.")
+    """Load the inverted index from disk."""
+    global current_indexer
+    if not INDEX_FILE.exists():
+        print(f"No saved index found at: {INDEX_FILE}")
+        print("Run 'build' first to crawl pages and create the index.")
+        return
+
+    indexer = InvertedIndexer()
+    indexer.load_from_file(str(INDEX_FILE))
+    current_indexer = indexer
+
+    print(f"Documents loaded: {len(indexer.documents)}")
+    print(f"Unique terms loaded: {len(indexer.get_index())}")
 
 
 def handle_print_word(args: list[str]) -> None:
