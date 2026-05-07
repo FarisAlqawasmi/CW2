@@ -1,3 +1,10 @@
+"""
+Indexer structure for the COMP3011 search engine tool.
+
+This file provides an initial scaffold for an inverted index. Real tokenisation,
+ranking, and persistence will be implemented in later stages.
+"""
+
 from __future__ import annotations
 
 import json

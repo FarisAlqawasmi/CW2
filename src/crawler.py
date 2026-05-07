@@ -1,3 +1,5 @@
+"""Crawler structure for the COMP3011 search engine tool."""
+
 from __future__ import annotations
 
 from collections import deque

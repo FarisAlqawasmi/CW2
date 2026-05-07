@@ -1,3 +1,5 @@
+"""Command-line interface for the COMP3011 search engine tool."""
+
 from __future__ import annotations
 
 import sys
@@ -23,7 +25,7 @@ def show_help() -> None:
         "  build          - crawl pages, build the inverted index, and save it\n"
         "  load           - load a saved index from disk\n"
         "  print <word>   - show postings and statistics for a word\n"
-        "  find <query>   - run a conjunctive search query\n"
+        "  find <query>   - run a conjunctive search query with TF-IDF ranking\n"
         "  help           - show this message\n"
         "  exit           - quit the program"
     )

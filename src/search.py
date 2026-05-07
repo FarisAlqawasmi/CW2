@@ -1,5 +1,13 @@
+"""
+Search engine structure for the COMP3011 search engine tool.
+
+This module provides a minimal scaffold. Ranking and CLI integration are added
+in later stages.
+"""
+
 from __future__ import annotations
 
+import math
 import re
 
 
@@ -61,6 +69,22 @@ class SearchEngine:
                 result[doc_id] = posting
         return result
 
+    def inverse_document_frequency(self, term: str) -> float:
+        """
+        Compute a safe inverse document frequency (IDF) value for a term.
+
+        Uses:
+            idf = log((N + 1) / (df + 1)) + 1
+        where N is the total number of documents and df is the document frequency.
+        """
+        normalized = term.lower()
+        entry = self.inverted_index.get(normalized, {})
+        df = entry.get("df", 0) if isinstance(entry, dict) else 0
+        df_int = df if isinstance(df, int) and df >= 0 else 0
+
+        n_docs = len(self.documents)
+        return math.log((n_docs + 1) / (df_int + 1)) + 1.0
+
     def search(self, query: str) -> list[dict[str, object]]:
         """
         Run a conjunctive (AND) search for the given query.
@@ -69,7 +93,7 @@ class SearchEngine:
             query: User search string.
 
         Returns:
-            Result list sorted by descending score (sum of term frequencies).
+            Result list sorted by descending score (sum of tf * idf).
         """
         terms = self.tokenize_query(query)
         if not terms:
@@ -89,11 +113,11 @@ class SearchEngine:
 
         results: list[dict[str, object]] = []
         for doc_id in common_doc_ids:
-            score = 0
-            for postings in postings_per_term:
+            score = 0.0
+            for term, postings in zip(terms, postings_per_term, strict=False):
                 tf = postings.get(doc_id, {}).get("tf")
                 if isinstance(tf, int):
-                    score += tf
+                    score += float(tf) * self.inverse_document_frequency(term)
 
             doc_meta = self.documents.get(doc_id, {})
             url = doc_meta.get("url", "")
@@ -104,9 +128,9 @@ class SearchEngine:
                     "doc_id": doc_id,
                     "url": url if isinstance(url, str) else "",
                     "title": title if isinstance(title, str) else "",
-                    "score": score,
+                    "score": round(score, 4),
                 }
             )
 
-        results.sort(key=lambda r: int(r.get("score", 0)), reverse=True)
+        results.sort(key=lambda r: float(r.get("score", 0.0)), reverse=True)
         return results

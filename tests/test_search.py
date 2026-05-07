@@ -76,13 +76,13 @@ def test_search_single_word_returns_results_sorted_by_score_desc(
     engine = SearchEngine(inverted_index, documents)
 
     results = engine.search("apple")
-    assert [r["doc_id"] for r in results] == [0, 1]  # tf: 3 then 1
-    assert results[0]["score"] == 3
+    assert [r["doc_id"] for r in results] == [0, 1]
+    assert results[0]["score"] == 3.863
     assert results[0]["title"] == "Doc A"
     assert results[0]["url"] == "https://example.com/a"
 
 
-def test_search_multi_word_is_conjunctive_and_scores_sum_tf(
+def test_search_multi_word_is_conjunctive_and_scores_sum_tf_idf(
     fake_index_and_docs: tuple[dict[str, dict[str, object]], dict[int, dict[str, object]]],
 ) -> None:
     inverted_index, documents = fake_index_and_docs
@@ -91,7 +91,7 @@ def test_search_multi_word_is_conjunctive_and_scores_sum_tf(
     results = engine.search("apple banana")
     assert len(results) == 1
     assert results[0]["doc_id"] == 0
-    assert results[0]["score"] == 4  # apple tf=3 + banana tf=1
+    assert results[0]["score"] == 5.1507
 
 
 def test_search_returns_empty_list_when_any_term_missing(
