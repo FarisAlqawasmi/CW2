@@ -6,11 +6,14 @@ import sys
 
 from crawler import SearchCrawler
 from indexer import InvertedIndexer
+from search import SearchEngine
 
 
 PROMPT = "search> "
 
 TARGET_WEBSITE: str = "https://quotes.toscrape.com/"
+
+current_indexer: InvertedIndexer | None = None
 
 
 def show_help() -> None:
@@ -28,11 +31,13 @@ def show_help() -> None:
 
 def handle_build() -> None:
     """Crawl the target website and build the inverted index."""
+    global current_indexer
     crawler = SearchCrawler(start_url=TARGET_WEBSITE, max_pages=3)
     crawled_pages = crawler.crawl()
 
     indexer = InvertedIndexer()
     indexer.build_index(crawled_pages)
+    current_indexer = indexer
 
     print(f"Pages crawled: {len(crawled_pages)}")
     print(f"Documents indexed: {len(indexer.documents)}")
@@ -62,18 +67,33 @@ def handle_print_word(args: list[str]) -> None:
 
 def handle_find_query(args: list[str]) -> None:
     """
-    Handle the find command placeholder.
+    Handle the find command.
 
     Args:
         args: Tokens after the command name.
     """
     if not args:
         print("Usage: find <query>")
-        print("  <query> - search terms once implemented.")
+        print("  <query> - search terms.")
         return
 
     query = " ".join(args)
-    print(f'Find command recognised. Search not implemented yet. Query: "{query}"')
+    if current_indexer is None:
+        print("No index is currently loaded. Run 'build' first.")
+        return
+
+    engine = SearchEngine(current_indexer.get_index(), current_indexer.documents)
+    results = engine.search(query)
+
+    if not results:
+        print("No matching pages found.")
+        return
+
+    for result in results:
+        score = result.get("score", 0)
+        title = result.get("title", "")
+        url = result.get("url", "")
+        print(f"[{score}] {title} - {url}")
 
 
 def handle_unknown(command: str) -> None:
