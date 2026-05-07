@@ -1,5 +1,3 @@
-"""Command-line interface for the COMP3011 search engine tool."""
-
 from __future__ import annotations
 
 import sys
@@ -22,10 +20,10 @@ def show_help() -> None:
     """Display available commands and short descriptions."""
     print(
         "Commands:\n"
-        "  build          - crawl pages and build the inverted index\n"
-        "  load           - load a saved index from disk (not implemented yet)\n"
-        "  print <word>   - show postings for a word (not implemented yet)\n"
-        "  find <query>   - run a search query (not implemented yet)\n"
+        "  build          - crawl pages, build the inverted index, and save it\n"
+        "  load           - load a saved index from disk\n"
+        "  print <word>   - show postings and statistics for a word\n"
+        "  find <query>   - run a conjunctive search query\n"
         "  help           - show this message\n"
         "  exit           - quit the program"
     )
@@ -202,7 +200,7 @@ def run_shell() -> None:
     while True:
         try:
             line = input(PROMPT)
-        except EOFError:
+        except (EOFError, KeyboardInterrupt):
             print()
             print("Goodbye.")
             break

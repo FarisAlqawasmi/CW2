@@ -1,10 +1,3 @@
-"""
-Search engine structure for the COMP3011 search engine tool.
-
-This module provides a minimal scaffold. Ranking and CLI integration are added
-in later stages.
-"""
-
 from __future__ import annotations
 
 import re
