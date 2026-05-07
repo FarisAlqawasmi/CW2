@@ -51,7 +51,7 @@ def handle_load() -> None:
 
 def handle_print_word(args: list[str]) -> None:
     """
-    Handle the print command placeholder.
+    Handle the print command.
 
     Args:
         args: Tokens after the command name.
@@ -61,8 +61,47 @@ def handle_print_word(args: list[str]) -> None:
         print("  <word> - term to look up in the index once implemented.")
         return
 
-    word = " ".join(args)
-    print(f'Print command recognised. Index not implemented yet. Requested word: "{word}"')
+    if current_indexer is None:
+        print("No index is currently loaded. Run 'build' first.")
+        return
+
+    word = " ".join(args).lower()
+    index = current_indexer.get_index()
+    entry = index.get(word)
+
+    if not isinstance(entry, dict):
+        print(f'The word "{word}" is not in the index.')
+        return
+
+    df = entry.get("df")
+    postings = entry.get("postings")
+    if not isinstance(df, int) or not isinstance(postings, dict):
+        print(f'The word "{word}" is not in the index.')
+        return
+
+    print(f'Word: "{word}"')
+    print(f"Document frequency (df): {df}")
+
+    for doc_id in sorted(postings):
+        posting = postings.get(doc_id)
+        if not isinstance(doc_id, int) or not isinstance(posting, dict):
+            continue
+
+        tf = posting.get("tf", 0)
+        positions = posting.get("positions", [])
+
+        url = ""
+        doc_meta = current_indexer.documents.get(doc_id, {})
+        if isinstance(doc_meta, dict):
+            meta_url = doc_meta.get("url", "")
+            if isinstance(meta_url, str):
+                url = meta_url
+
+        print(f"- doc_id: {doc_id}")
+        print(f"  tf: {tf}")
+        print(f"  positions: {positions}")
+        if url:
+            print(f"  url: {url}")
 
 
 def handle_find_query(args: list[str]) -> None:
