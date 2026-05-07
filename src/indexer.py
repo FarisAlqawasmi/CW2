@@ -7,7 +7,9 @@ ranking, and persistence will be implemented in later stages.
 
 from __future__ import annotations
 
+import json
 import re
+from pathlib import Path
 
 
 class InvertedIndexer:
@@ -112,3 +114,69 @@ class InvertedIndexer:
             The inverted index mapping (placeholder structure).
         """
         return dict(self.inverted_index)
+
+    def save_to_file(self, path: str) -> None:
+        """
+        Save the current index and documents to a JSON file.
+
+        Args:
+            path: Output file path.
+        """
+        payload = {
+            "documents": self.documents,
+            "inverted_index": self.inverted_index,
+        }
+        Path(path).write_text(json.dumps(payload, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    def load_from_file(self, path: str) -> None:
+        """
+        Load index and documents from a JSON file.
+
+        Note:
+            JSON forces dictionary keys to be strings. This method converts
+            document ids back to integers in both ``documents`` and each term's
+            ``postings`` dictionary.
+
+        Args:
+            path: Input file path.
+        """
+        raw = json.loads(Path(path).read_text(encoding="utf-8"))
+
+        documents_raw = raw.get("documents", {})
+        inverted_raw = raw.get("inverted_index", {})
+
+        documents: dict[int, dict[str, object]] = {}
+        if isinstance(documents_raw, dict):
+            for doc_id_str, meta in documents_raw.items():
+                try:
+                    doc_id = int(doc_id_str)
+                except (TypeError, ValueError):
+                    continue
+                if isinstance(meta, dict):
+                    documents[doc_id] = meta
+
+        inverted_index: dict[str, dict[str, object]] = {}
+        if isinstance(inverted_raw, dict):
+            for term, entry in inverted_raw.items():
+                if not isinstance(term, str) or not isinstance(entry, dict):
+                    continue
+
+                postings_raw = entry.get("postings", {})
+                postings: dict[int, dict[str, object]] = {}
+                if isinstance(postings_raw, dict):
+                    for doc_id_str, posting in postings_raw.items():
+                        try:
+                            doc_id = int(doc_id_str)
+                        except (TypeError, ValueError):
+                            continue
+                        if isinstance(posting, dict):
+                            postings[doc_id] = posting
+
+                df = entry.get("df", 0)
+                inverted_index[term] = {
+                    "df": df if isinstance(df, int) else 0,
+                    "postings": postings,
+                }
+
+        self.documents = documents
+        self.inverted_index = inverted_index
