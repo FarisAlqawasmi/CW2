@@ -86,7 +86,7 @@ search>
 - `build`: crawl `https://quotes.toscrape.com/`, build the inverted index, and save it to `data/index.json`
 - `load`: load a saved index from `data/index.json`
 - `print <word>`: display index information for a single word (df, tf, positions, and URLs)
-- `find <query>`: search using conjunctive (AND) matching and score by summed term frequency
+- `find <query>`: search using conjunctive (AND) matching with TF-IDF ranking
 - `help`: display the available commands
 - `exit`: quit the program
 
@@ -126,7 +126,7 @@ Document frequency (df): 1
 
 ```text
 search> find life truth
-[3] A page title - https://quotes.toscrape.com/page/1/
+[5.1507] Quotes to Scrape - https://quotes.toscrape.com/
 ```
 
 ## Testing
@@ -158,3 +158,24 @@ This project uses:
 - `requests`
 - `beautifulsoup4`
 - `pytest`
+
+## Limitations and Future Improvements
+
+Current limitations of the system include:
+
+- No stopword removal
+- No stemming or lemmatization
+- No phrase querying
+- No wildcard querying
+- Limited crawling scope (`max_pages=3` during demonstrations)
+- Basic conjunctive (AND) retrieval only
+
+The search engine currently uses TF-IDF scoring for ranking, but future improvements could include:
+
+- BM25 ranking
+- PageRank-style authority scoring
+- Snippet generation
+- Larger-scale crawling
+- Better token normalization
+- Query expansion and spelling correction
+- Positional phrase search using stored token positions
