@@ -32,21 +32,23 @@ class SearchCrawler:
         self.crawled_pages: dict[int, dict[str, object]] = {}
 
     def crawl(self) -> dict[int, dict[str, object]]:
-        """Run the crawl process and collect crawled page data."""
-        frontier_set: set[str] = set(self.frontier)
+        """
+        Crawl paginated quote listing pages by following the "Next" link.
+
+        This avoids crawling all internal links (authors/tags/login, etc.) and
+        instead follows the site's pagination path:
+        https://quotes.toscrape.com/ -> /page/2/ -> /page/3/ -> ...
+        """
         last_request_time: float | None = None
 
-        while self.frontier:
+        current_url: str | None = self.normalize_url(self.start_url)
+        while current_url is not None:
             if self.max_pages is not None and len(self.crawled_pages) >= self.max_pages:
                 break
 
-            url = self.frontier.popleft()
-            frontier_set.discard(url)
-
-            normalized_url = self.normalize_url(url)
-            if normalized_url in self.visited:
-                continue
-            self.visited.add(normalized_url)
+            if current_url in self.visited:
+                break
+            self.visited.add(current_url)
 
             if last_request_time is not None:
                 elapsed = time.monotonic() - last_request_time
@@ -54,29 +56,27 @@ class SearchCrawler:
                 if remaining > 0:
                     time.sleep(remaining)
 
-            html = self.fetch_page(normalized_url)
+            html = self.fetch_page(current_url)
             last_request_time = time.monotonic()
             if html is None:
-                continue
+                break
 
             title, text = self.extract_text(html)
-            links = self.extract_links(html, normalized_url)
+            links = self.extract_links(html, current_url)
 
             doc_id = len(self.crawled_pages)
             self.crawled_pages[doc_id] = {
-                "url": normalized_url,
+                "url": current_url,
                 "title": title,
                 "text": text,
                 "links": links,
             }
 
-            for link in links:
-                if link in self.visited:
-                    continue
-                if link in frontier_set:
-                    continue
-                self.frontier.append(link)
-                frontier_set.add(link)
+            next_url = self.extract_next_page(html, current_url)
+            if next_url is None or next_url in self.visited:
+                break
+
+            current_url = next_url
 
         return dict(self.crawled_pages)
 
@@ -125,6 +125,34 @@ class SearchCrawler:
             links.append(normalized)
 
         return links
+
+    def extract_next_page(self, html: str, base_url: str) -> str | None:
+        """
+        Extract the pagination "Next" page URL from HTML.
+
+        Args:
+            html: Raw page HTML.
+            base_url: URL of the current page (used to resolve relative links).
+
+        Returns:
+            Normalized absolute URL for the next page, or None if no next link exists.
+        """
+        soup = BeautifulSoup(html, "html.parser")
+
+        next_link = soup.select_one("li.next a[href]")
+        if next_link is None:
+            return None
+
+        href = str(next_link.get("href", "")).strip()
+        if not href:
+            return None
+
+        resolved = urljoin(base_url, href)
+        normalized = self.normalize_url(resolved)
+        if not self.is_internal_url(normalized):
+            return None
+
+        return normalized
 
     def extract_text(self, html: str) -> tuple[str, str]:
         """Extract the page title and visible text from HTML."""

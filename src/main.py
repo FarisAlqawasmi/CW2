@@ -34,7 +34,7 @@ def show_help() -> None:
 def handle_build() -> None:
     """Crawl the target website and build the inverted index."""
     global current_indexer
-    crawler = SearchCrawler(start_url=TARGET_WEBSITE, max_pages=3)
+    crawler = SearchCrawler(start_url=TARGET_WEBSITE)
     crawled_pages = crawler.crawl()
 
     indexer = InvertedIndexer()
