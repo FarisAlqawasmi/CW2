@@ -1,4 +1,6 @@
 env/
 __pycache__/
+.pytest_cache/
 *.pyc
+*.pyt
 .DS_Store
