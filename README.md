@@ -1,24 +1,28 @@
 # COMP3011 Coursework 2 — Search Engine Tool
 
-This project implements core components of a search engine, including web crawling, indexing, and query processing, as covered in the module lectures.
-
 ## Overview
 
-This repository contains coursework for **COMP3011 Web Services and Web Data**. The project is a **search engine tool** that will crawl, index, and query content from **[quotes.toscrape.com](https://quotes.toscrape.com/)**. The planned command-line interface will support **`build`**, **`load`**, **`print`**, and **`find`** operations.
+This repository contains coursework for **COMP3011 Web Services and Web Data**. The project implements a small **search engine tool** that crawls and indexes content from `https://quotes.toscrape.com/`, then supports simple term lookup and conjunctive (AND) querying via an interactive command-line interface.
 
 ## Current status
 
-The repository structure is in place, but the implementation is not yet complete. The crawler and other components will be developed in later stages.
+- The tool is functional end-to-end: **crawl → index → save/load → query**.
+- `build` crawls `https://quotes.toscrape.com/`, builds an inverted index, and saves it to `data/index.json`.
+- `load` loads the saved index from `data/index.json`.
+- `print <word>` displays **df**, per-document **tf**, token **positions**, and document **URLs**.
+- `find <query>` runs **conjunctive search** and prints scored results.
+- Tests are implemented using `pytest`.
 
 ## Repository structure
 
-``` bash
+```bash
 .
 ├── README.md
 ├── requirements.txt
-├── data/              
+├── data/
+│   └── index.json
 ├── src/
-│   ├── main.py        
+│   ├── main.py
 │   ├── crawler.py
 │   ├── indexer.py
 │   └── search.py
@@ -31,10 +35,10 @@ The repository structure is in place, but the implementation is not yet complete
 ## Setup
 
 1. Clone this repository.
-2. Create and activate a Python virtual environment named **`env`** (see below).
+2. Create and activate a Python virtual environment named `env`.
 3. Install dependencies from `requirements.txt`.
 
-### Virtual environment (`env`)
+### Create a virtual environment (`env`)
 
 **macOS / Linux:**
 
@@ -65,19 +69,92 @@ With `env` activated:
 pip install -r requirements.txt
 ```
 
-### Run the command-line interface
+## Run the command-line interface
 
 ```bash
 python src/main.py
 ```
 
-> **Note:** The search engine implementation phase is still in progress; behaviour may be incomplete until the development phase is finished.
+You should see a prompt like:
 
-## Planned commands
+```text
+search>
+```
 
-The tool will support the following commands:
+## Available commands
 
-- `build` — crawl the website and build the index  
-- `load` — load a previously saved index  
-- `print` — display indexed information for a word  
-- `find` — search for documents matching a query  
+- `build`: crawl `https://quotes.toscrape.com/`, build the inverted index, and save it to `data/index.json`
+- `load`: load a saved index from `data/index.json`
+- `print <word>`: display index information for a single word (df, tf, positions, and URLs)
+- `find <query>`: search using conjunctive (AND) matching and score by summed term frequency
+- `help`: display the available commands
+- `exit`: quit the program
+
+## Usage examples
+
+### `build`
+
+```text
+search> build
+Pages crawled: 3
+Documents indexed: 3
+Unique terms: 448
+Index saved to: data/index.json
+```
+
+### `load`
+
+```text
+search> load
+Documents loaded: 3
+Unique terms loaded: 448
+```
+
+### `print <word>`
+
+```text
+search> print truth
+Word: "truth"
+Document frequency (df): 1
+- doc_id: 0
+  tf: 1
+  positions: [42]
+  url: https://quotes.toscrape.com/
+```
+
+### `find <query>`
+
+```text
+search> find life truth
+[3] A page title - https://quotes.toscrape.com/page/1/
+```
+
+## Testing
+
+Run all tests:
+
+```bash
+pytest
+```
+
+Run individual test files:
+
+```bash
+pytest tests/test_crawler.py
+pytest tests/test_indexer.py
+pytest tests/test_search.py
+```
+
+## Dependencies
+
+Install all dependencies with:
+
+```bash
+pip install -r requirements.txt
+```
+
+This project uses:
+
+- `requests`
+- `beautifulsoup4`
+- `pytest`
